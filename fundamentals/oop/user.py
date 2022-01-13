@@ -33,3 +33,5 @@ zed.make_withdrawal(40)
 zed.make_withdrawal(30)
 zed.make_withdrawal(10)
 print(zed.account_balance)
+
+paisley.display_user_balance()
