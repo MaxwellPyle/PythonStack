@@ -1,0 +1,13 @@
+body{
+    display: inline;
+}
+.color1{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+.color2{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
