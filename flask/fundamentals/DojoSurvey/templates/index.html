@@ -10,21 +10,21 @@
 <body>
     <div class="container mt-1">
         <div class="border border-dark">
-            <form>
+            <form action="/process" method="post">
                 <div class="row g-2 align-items-center justify-content-around mt-1">
                     <div class="col-auto">
-                        <label for="inputPassword6" class="col-form-label">Password</label>
+                        <label for="name" class="col-form-label">Name:</label>
                     </div>
                     <div class="col-auto">
-                        <input type="password" id="inputPassword6" class="form-control">
+                        <input type="text" name="name" class="form-control">
                     </div>
                 </div>
                 <div class="row g-2 align-items-center justify-content-around mt-1">
                     <div class="col-auto">
-                        <label for="inputdojolocation" class="col-form-label">Location</label>
+                        <label for="location" class="col-form-label">Location</label>
                     </div>
                     <div class="col-auto">
-                        <select id="location" class="form-control">
+                        <select name="location" class="form-control">
                             <option value="San Jose">San Jose</option>
                             <option value="Burbank">Burbank</option>
                             <option value="Bellevue">Bellevue</option>
@@ -34,10 +34,10 @@
                 </div>
                 <div class="row g-2 align-items-center justify-content-around mt-1">
                     <div class="col-auto">
-                        <label for="inputfavlang" class="col-form-label">Favorite language:</label>
+                        <label for="favlang" class="col-form-label">Favorite language:</label>
                     </div>
                     <div class="col-auto">
-                        <select id="Favorite Language" class="form-control">
+                        <select name="favlang" class="form-control">
                             <option value="Python">Python</option>
                             <option value="Java">Java</option>
                             <option value="C">C</option>
@@ -46,8 +46,11 @@
                         </select>
                     </div>
                 </div>
-                <label for="Comments">Comments(Optional):</label>
-                <input type="text" id="comments" class="form-control">
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments"  cols="10" rows="10" class="form-control"></textarea>
+                </div>
+                <input type="submit" value="Submit" class="btn btn-primary">
             </form>
         </div>
     </div>
